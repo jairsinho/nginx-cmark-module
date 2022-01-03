@@ -1,0 +1,9 @@
+ngx_addon_name=ngx_http_cmark_module
+
+ngx_module_type=HTTP
+ngx_module_name=ngx_http_cmark_module
+ngx_module_srcs="$ngx_addon_dir/ngx_http_cmark_module.c"
+ngx_module_incs="$ngx_addon_dir $ngx_addon_dir/../external/src/cmark-gfm/src $ngx_addon_dir/../external/src/cmark-gfm-build/src $ngx_addon_dir/../external/src/cmark-gfm/extensions $ngx_addon_dir/../external/src/cmark-gfm-build/extensions"
+ngx_module_libs="-L$ngx_addon_dir/../external/src/cmark-gfm-build/src -L$ngx_addon_dir/../external/src/cmark-gfm-build/extensions -lcmark-gfm -lcmark-gfm-extensions"
+
+. auto/module
