@@ -9,6 +9,7 @@ The build will generate the extension file under `external/src/nginx/objs/ngx_ht
 ```bash
 mkdir build
 cd build
+cmake ..
 make
 ```
 
